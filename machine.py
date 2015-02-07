@@ -6,6 +6,6 @@ class CoinDispenser:
         change = []
         for coin in self.coins:
             coin_value = new_total // coin
-            new_total = (new_total - coin) % coin
+            new_total = new_total % coin
             change.append(coin_value)
         return change
